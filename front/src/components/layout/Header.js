@@ -31,10 +31,72 @@ const Header = () => {
                 <span className="ml-1" id="cart_count">2</span>
             </div>
 
+          
+
+          
+
         </nav>
+        
+        <nav2 nav className='navbar row'><div className='col-12 col-md'>
+                <div className='navbar-brand'></div>
+            </div>
+
+          
+
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button type="button" class="group-btn"onClick={Activar}>1</button>
+        <button type="button" class="group-btn"onClick={Activar2}>2</button>
+        <button type="button" class="group-btn"onClick={Activar3}>3</button>
+        <button type="button" class="group-btn"onClick={Activar4}>4</button>
+       
+        </div>
+         <div class="btn-group mr-2" role="group" aria-label="Second group">
+        <button type="button" class="agregar_btn">5</button>
+        <button type="button" class="agregar_btn">6</button>
+        <button type="button" class="agregar_btn">7</button>
+        </div>
+
+        
+        
+
+
+
+        </div>
+       
+       
+
+
+          
+        </nav2>
+       
+
+
+        
+        
+       
+
+
 
     </Fragment>
+    
   )
 }
+
+function Activar(){
+    alert ("primer boton")
+}
+
+function Activar2(){
+    alert ("segundo boton")
+}
+function Activar3(){
+    alert ("tercer boton")
+}
+function Activar4(){
+    alert ("cuarto boton")
+}
+
+
 
 export default Header

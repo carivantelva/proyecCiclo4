@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import Header from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
+import { Usuarios } from './components/Usuarios';
+import { Home } from './components/layout/Home';
 
 
 function App() {
@@ -9,16 +11,9 @@ function App() {
     <div className="App">
         <Header />
 
+        <Home/>
         
-        <lef>Pagina en construccion</lef>
-        <center>Contenido aqui</center>
-        <center>Contenido aqui</center>
-        <center>Contenido aqui</center>
-        <center>Contenido aqui</center>
-        <center>Contenido aqui</center>
-        <center>Contenido aqui</center>
-        <center>Contenido aqui</center>
-        <center>Contenido aqui</center>
+        <Usuarios/>
         <Footer />
     </div>
   );
