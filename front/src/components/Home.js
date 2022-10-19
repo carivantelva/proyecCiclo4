@@ -1,14 +1,16 @@
 import React from 'react'
+import MetaData from './layout/MetaData'
 
 export const Home = () => {
-  return (
-    
-    <fragment>
-        <h1 id='encabezado_productos'>Ultimos Productos</h1>
-        <section id='productos'className='container mt-5'>
-          <div className='row'>
-         {/*Producto 1*/}
-         <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
+    return (
+
+        <fragment>
+            <MetaData title="Lo mejor de envases plasticos"></MetaData>
+            <h1 id="encabezado_productos">Ultimos Productos</h1>
+            <section id='productos' className='container mt-5'>
+                <div className='row'>
+                    {/*Producto 1*/}
+                    <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
                         <div className='card p-3 rounded'>
                             <img className='card-img-top mx-auto' src='./images/images3.jpg' alt="Nutra gold"></img>
                             <div className='card-body d-flex flex-column'>
@@ -25,10 +27,10 @@ export const Home = () => {
                             </div>
                         </div>
                     </div>
-          {/*Producto 2*/}
+                    {/*Producto 2*/}
 
-          
-         <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
+
+                    <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
                         <div className='card p-3 rounded'>
                             <img className='card-img-top mx-auto' src='./images/images5.jpg' alt="Nutra gold"></img>
                             <div className='card-body d-flex flex-column'>
@@ -45,10 +47,10 @@ export const Home = () => {
                             </div>
                         </div>
                     </div>
-          
 
-          {/*Producto 3*/}
-         <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
+
+                    {/*Producto 3*/}
+                    <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
                         <div className='card p-3 rounded'>
                             <img className='card-img-top mx-auto' src='./images/images8.jpg' alt="Nutra gold"></img>
                             <div className='card-body d-flex flex-column'>
@@ -66,8 +68,8 @@ export const Home = () => {
                         </div>
                     </div>
 
-          {/*Producto 4*/}
-          <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
+                    {/*Producto 4*/}
+                    <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
                         <div className='card p-3 rounded'>
                             <img className='card-img-top mx-auto' src='./images/garrafa-7.jpg' alt="Nutra gold"></img>
                             <div className='card-body d-flex flex-column'>
@@ -85,8 +87,8 @@ export const Home = () => {
                         </div>
                     </div>
 
-          {/*Producto 5*/}
-          <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
+                    {/*Producto 5*/}
+                    <div className='col-sm-12 col-md-6 col-lg-3 my-3'>
                         <div className='card p-3 rounded'>
                             <img className='card-img-top mx-auto' src='./images/galon-color.jpg' alt="Nutra gold"></img>
                             <div className='card-body d-flex flex-column'>
@@ -110,8 +112,8 @@ export const Home = () => {
 
 
 
-          </div>
-        </section>
-    </fragment>
-  )
+                </div>
+            </section>
+        </fragment>
+    )
 }
