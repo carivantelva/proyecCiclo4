@@ -1,12 +1,25 @@
 import React from 'react'
 import MetaData from './layout/MetaData'
+import {useDispatch} from 'react-redux'
+import {getProducts} from '../actions/productActions'
+import {useEffect} from 'react';
+
 
 export const Home = () => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(getProducts());
+    }, [dispatch]);
+
+
     return (
 
+
+        
         <fragment>
             <MetaData title="Lo mejor de envases plasticos"></MetaData>
             <h1 id="encabezado_productos">Ultimos Productos</h1>
+
             <section id='productos' className='container mt-5'>
                 <div className='row'>
                     {/*Producto 1*/}
@@ -105,15 +118,9 @@ export const Home = () => {
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
                 </div>
             </section>
         </fragment>
     )
 }
+export default Home
