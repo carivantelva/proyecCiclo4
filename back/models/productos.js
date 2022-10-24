@@ -36,6 +36,10 @@ const productosSchema=mongoose.Schema({
     categoria:{
         type:String,
         required:[true,"Por favor seleccione la categoria del producto."],
+       
+       
+       
+       
         //aqui se llena el campo de categoria
         enum:{
             values:[
