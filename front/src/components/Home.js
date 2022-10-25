@@ -25,7 +25,7 @@ export const Home = () => {
             {loading ? <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i> :(
                 <Fragment>
                     <MetaData title="Envases Industriales"></MetaData>
-            <h1 id="encabezado_productos">Ultimos Productos</h1>
+            <h1 id="encabezado_productos">Catalogo de Productos</h1>
 
             <section id="productos" className='container mt-5'>
                 <div className='row'>

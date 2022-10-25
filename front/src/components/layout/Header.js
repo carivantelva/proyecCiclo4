@@ -6,7 +6,7 @@ const Header = () => {
         <nav className='navbar row'>
             <div className='col-12 col-md-3'>
                 <div className='navbar-brand'>
-                    <img src="./images/logoTello.png" alt="MO hay foto en el header"></img></div>
+                    <img src="./images/logos/logotello8.png" alt="No cargo Imagen"></img></div>
             </div>
 
 
@@ -29,13 +29,15 @@ const Header = () => {
                 <button className="btn" id="login_btn">Inicie Sesión</button>
                 <span id="cart" className="ml-3">Carrito</span>
                 <span className="ml-1" id="cart_count">2</span>
-            </div>
-
-          
+            </div>       
 
           
 
         </nav>
+
+
+
+        
         
         <nav2 nav className='navbar row'><div className='col-12 col-md'>
                 <div className='navbar-brand'></div>
