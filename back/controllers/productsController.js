@@ -1,4 +1,6 @@
-const producto=require("../models/productos")
+const catchAsyncErrors = require("../middleware/catchAsyncErrors");
+const producto=require("../models/productos");
+const ErrorHandler = require("../utils/erroHandler");
 const fetch =(url)=>import('node-fetch').then(({default:fetch})=>fetch(url)); //Usurpación del require
 
 //Ver la lista de productos
@@ -18,22 +20,19 @@ exports.getProducts=async (req,res,next) =>{
 }
 
 //Ver un producto por ID
-exports.getProductById= async (req, res, next)=>{
+exports.getProductById= catchAsyncErrors( async (req, res, next)=>{
     const product= await producto.findById(req.params.id)
     
     if (!product){
-            return res.status(404).json({
-            success:false,
-            message: 'No encontramos el producto seleccionado',
-            error:true
-        })
-    }
+            return next(new ErrorHandler("Producto no encontrado", 404))
+        }
+    
     res.status(200).json({
         success:true,
         message:"Aqui debajo encuentras información sobre tu producto: ",
         product
     })
-}
+})
 
 //Update un producto
 exports.updateProduct= async (req,res,next) =>{
