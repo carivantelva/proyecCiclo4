@@ -1,7 +1,7 @@
 {
-  "name": "proyecciclo4",
+  "name": "CarlosTello",
   "version": "1.0.0",
-  "description": "proyecto para ciclo 4",
+  "description": "Envases de plastico",
   "main": "server.js",
   "scripts": {
     "start": "node back/server.js",
@@ -10,25 +10,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carivantelva/proyecCiclo4.git"
+    "url": "git+https://github.com/carivantelva/shopOnline.git"
   },
-  "author": "carlos tello",
+  "author": "Carlos Tello",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/carivantelva/proyecCiclo4/issues"
+    "url": "https://github.com/carivantelva/shopOnline/issues"
   },
-  "homepage": "https://github.com/carivantelva/proyecCiclo4#readme",
+  "homepage": "https://github.com/carivantelva/shopOnline#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
-    "cooki": "^0.2.0",
+    "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.6.4",
     "node-fetch": "^3.2.10",
     "nodemailer": "^6.8.0",
-    "parser": "^0.1.4",
     "validator": "^13.7.0"
   },
   "devDependencies": {
