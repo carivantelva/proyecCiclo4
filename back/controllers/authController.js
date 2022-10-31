@@ -12,7 +12,7 @@ exports.registroUsuario=catchAsyncErrors(async(req, res, next)=>{
         email,
         password,
         avatar:{
-            public_id:"clipart-computer-icons-avatar-user-profile-avatar-heroes-rectangle"
+            public_id:"clipart-computer-icons-avatar-user-profile-avatar-heroes-rectangle",
             url:"https://e7.pngegg.com/pngimages/223/244/png-clipart-computer-icons-avatar-user-profile-avatar-heroes-rectangle.png"
         }      
     })

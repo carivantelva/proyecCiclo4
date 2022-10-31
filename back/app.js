@@ -9,10 +9,8 @@ const productos=require("./routes/products")
 const usuarios=require("./routes/auth")
 
 app.use('/api',productos) //Sujeto a decision (ruta del navegador)
-app.use('./api', usuarios)
+app.use('/api',usuarios)
 
-//Middlewares para manejar errores en nuestro proyecto
+//MiddleWares para manejar errores
 app.use(errorMiddleware)
-
-
 module.exports=app
